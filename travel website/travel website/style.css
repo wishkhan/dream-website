@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Navbar */
+nav {
+    background: #e7e3e3;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(56, 55, 55, 0.726);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+nav div a {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?travel,beach') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(132, 127, 127);
+    padding: 20px;
+}
+
+#home h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#home a {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Packages Section */
+#packages {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+#packages h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#packages .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#packages .grid div {
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Form */
+#booking {
+    background: #f0f8ff;
+    padding: 60px 20px;
+}
+
+#booking h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#booking form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#booking input,
+#booking select,
+#booking textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#booking button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Blog Section */
+#blog {
+    padding: 60px 20px;
+}
+
+#blog h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#blog .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#blog .grid div {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background: #e6f0ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav div a {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #packages .grid,
+    #blog .grid {
+        grid-template-columns: 1fr;
+    }
+}
